@@ -1,0 +1,44 @@
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+    title= "Radio Objects"
+    style
+      include ../css/styles.css
+  body
+    br
+    br
+    block content
+      .main.container
+        .row
+          .col-md-12
+            a(href="/log" target="_blanc") View log (folder id)
+            br
+            br
+          .col-md-12
+            .row
+              .col-md-2
+                button#get-random.btn.btn-primary Get Random Folder
+                br
+                br
+              .col-md-2
+                button#add-folder.btn.btn-primary Add Folder
+                br
+                br
+            div#my-slider.carousel.slide(data-ride="carousel")
+              div.carousel-inner
+              a.carousel-control-prev(href="#my-slider" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#my-slider" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+    
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous")
+    script
+      include ../js/initialCarousel.js
+      include ../js/buttonHandler.js
+

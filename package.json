@@ -1,0 +1,24 @@
+{
+  "name": "radio-objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "pg": "^7.18.2",
+    "pug": "^2.0.4",
+    "uuidv4": "^6.0.6"
+  }
+}
